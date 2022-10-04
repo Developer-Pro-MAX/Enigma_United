@@ -1,0 +1,58 @@
+<html>
+    <title>
+        Welcome To Encrypt.Me
+    </title>
+        <head>
+          <link rel = "icon" href = 
+          "https://upload.wikimedia.org/wikipedia/commons/f/f2/Coat_of_Arms_of_the_Russian_Federation.svg" 
+                  type = "image/x-icon">
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+         </head>
+         <body background="https://i.gifer.com/embedded/download/1AY3.gif">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="">Encrypt.Me</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href=" ">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Encryption">Encrypt</a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="/Decrypt">Decrypt</a>
+                    </li> 
+              </div>
+            </div>
+          </nav>
+          <br>
+          <br>
+          <h2><font color="yellow"> ENTER YOUR TEXT HERE </h2> </font>
+        <marquee>
+          <font color = "orange">
+            <h4> You can enlarge the text input area by stretching using the option present on bottom right corner</h4>
+            </marquee>
+            <form action='/Results/' method = 'post'>  {% csrf_token %}
+             <textarea name = "text" spellcheck="true" data-ms-editor="true" style="margin: 2px; width: 601px; height: 406px; background-image: url('https://dpanoply.s3.amazonaws.com/blog/wet-frosted-glass-effect/02.jpg')"> </textarea>
+             <br>
+             <!-- <input type="checkbox", name = "Remove Punc"> Remove Punctuations
+             <input type="checkbox", name = "Full Caps"> Uppercase
+             <input type="checkbox", name = "newline"> New Line Remover
+             <br>
+             <input type="checkbox", name = "extraspaceremover"> Extra Space Remover
+             <br>
+             <input type="checkbox", name = "charcounter"> Charecter Counter -->
+             </font>
+             <button type='submit' class="btn btn-dark"> Push Request </bUTTON>
+    </body>
+</html>

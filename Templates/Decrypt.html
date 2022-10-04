@@ -1,0 +1,49 @@
+<html>
+    <title>
+        Welcome To Encrypt.Me
+    </title>
+        <head>
+          <link rel = "icon" href = 
+          "https://upload.wikimedia.org/wikipedia/commons/f/f2/Coat_of_Arms_of_the_Russian_Federation.svg" 
+                  type = "image/x-icon">
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+         </head>
+         <body background="https://th.bing.com/th/id/R.fd789c2563f36186cc846db07ae1cf48?rik=P%2fEifPpEXJEJ3g&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fFree-HD-Gif-Wallpapers.gif&ehk=%2bYnsqzxRe5AJsRCtAgq6V2XOaa%2bsLvf2e0T0TwWWKvs%3d&risl=&pid=ImgRaw&r=0">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/">Encrypt.Me</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Encryption">Encrypt</a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="/Decrypt">Decrypt</a>
+                    </li> 
+              </div>
+            </div>
+          </nav>
+          <form action='/Decryption/' method = 'post'>  {% csrf_token %}
+         <font color= 'white'> <h3>   Enter Your Encryption Key <br>
+            <textarea color="white" name = "text1" spellcheck="true" data-ms-editor="true" style="margin: 2px; width: 601px; height: 50px; background-image: url('https://i.pinimg.com/originals/d7/d8/db/d7d8dbf3811c797e5d2cc364743ae3a7.gif')"> </textarea>
+            <br>
+            <br>
+          Enter Your Encrypted Message 
+            <BR>
+            <textarea name = "text2" spellcheck="true" data-ms-editor="true" style="margin: 2px; width: 601px; height: 406px; background-image: url('https://cdn.dribbble.com/users/729829/screenshots/2249241/ping-pong.gif')"> </textarea> 
+          </font>
+            <button type='submit' class="btn btn-warning"> Push Request </bUTTON>
+    </body>
+</html>
